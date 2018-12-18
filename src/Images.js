@@ -28,7 +28,7 @@ class Images extends Component {
   };
 
   componentDidMount() {
-    const time = 500;
+    const time = 2500;
 
     setInterval(() => {
       this.setState({
