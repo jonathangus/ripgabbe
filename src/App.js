@@ -13,6 +13,7 @@ class App extends Component {
 
     return (
       <div className="container">
+        <link rel="preload" as="video" href="/bg.mp4" />>
         <div className="wrap">
           {show === "images" && (
             <Images

@@ -24,12 +24,14 @@ const Image = posed.div({
 
 class Images extends Component {
   state = {
-    visible: 0
+    visible: -1
   };
 
   componentDidMount() {
-    const time = 2500;
-
+    const time = 2000;
+    this.setState({
+      visible: 0
+    });
     setInterval(() => {
       this.setState({
         visible: this.state.visible + 1
@@ -51,8 +53,6 @@ class Images extends Component {
           } else if (i < count) {
             posed = "done";
           }
-
-          console.log({ posed });
 
           return (
             <Image pose={posed} key={l}>
