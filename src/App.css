@@ -1,0 +1,12 @@
+body {
+  background: #222;
+}
+
+.container {
+  height: 100vh;
+}
+
+.wrap {
+  max-width: 700px;
+  margin: 0 auto;
+}
