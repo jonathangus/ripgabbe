@@ -1,4 +1,7 @@
 import React from "react";
+import Vinit from "./Vinit";
+import HannJont from "./HannJont";
+import JontFace from "./JontFace";
 
 export default class extends React.Component {
   componentDidMount() {
@@ -24,9 +27,20 @@ export default class extends React.Component {
           <h2>2008 - 2018</h2>
         </div>
 
-        <video loop playsInline muted autoPlay preload="true">
+        <video
+          className="mainVid"
+          loop
+          playsInline
+          muted
+          autoPlay
+          preload="true"
+        >
           <source src="/bg.mp4" />
         </video>
+
+        <Vinit />
+        <HannJont />
+        <JontFace />
       </div>
     );
   }

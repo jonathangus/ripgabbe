@@ -22,15 +22,15 @@ class App extends Component {
               }}
             />
           )}
-          {show === "explosion" && (
-            <Explosion
-              onDone={() => {
-                this.setState({ show: "rip" });
-              }}
-            />
-          )}
-          {show === "rip" && <Rip />}
         </div>
+        {show === "explosion" && (
+          <Explosion
+            onDone={() => {
+              this.setState({ show: "rip" });
+            }}
+          />
+        )}
+        {show === "rip" && <Rip />}
       </div>
     );
   }
