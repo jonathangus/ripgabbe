@@ -201,3 +201,34 @@ h2 {
 .daniel img {
   max-width: 200px;
 }
+
+.boat {
+  position: absolute;
+  left: 200px;
+  top: 0;
+  z-index: 12;
+}
+.boat video {
+  max-width: 130px;
+}
+
+.quoute {
+  position: absolute;
+  color: white;
+  z-index: 30;
+  text-align: center;
+  max-width: 400px;
+  min-width: 200px;
+}
+
+.name {
+  font-size: 30px;
+}
+
+h3 {
+  font-family: Helvetica, sans-serif;
+  color: #ff0;
+  font-weight: bold;
+  font-size: 60px;
+  text-shadow: 2px 2px 2px #000;
+}

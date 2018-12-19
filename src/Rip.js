@@ -3,6 +3,9 @@ import Vinit from "./Vinit";
 import HannJont from "./HannJont";
 import JontFace from "./JontFace";
 import Daniel from "./Daniel";
+import Boat from "./Boat";
+import Quotes from "./Quotes";
+
 export default class extends React.Component {
   componentDidMount() {
     new Audio("/music.mp3").play();
@@ -29,7 +32,6 @@ export default class extends React.Component {
             <h2>2008 - 2018</h2>
           </div>
         </div>
-
         <div className="mainVid">
           <video loop playsInline muted autoPlay preload="true">
             <source src="/bg.mp4" />
@@ -37,10 +39,11 @@ export default class extends React.Component {
 
           <Daniel />
         </div>
-
         <Vinit />
         <HannJont />
         <JontFace />
+        <Boat />
+        <Quotes />
       </div>
     );
   }
