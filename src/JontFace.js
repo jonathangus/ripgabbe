@@ -2,7 +2,7 @@ import React from "react";
 
 const random = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-const faces = ["/jontexd.png", "/david.png", "/viktor.png"];
+const faces = ["/jontexd.png", "/david.png", "/viktor.png", "/erik.png"];
 
 export default class extends React.Component {
   state = {
@@ -35,7 +35,7 @@ export default class extends React.Component {
           }
         ]
       });
-    }, 250);
+    }, 150);
   }
   render() {
     return (
