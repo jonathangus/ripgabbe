@@ -13,16 +13,19 @@ class App extends Component {
 
     return (
       <div className="container">
-        <link rel="preload" as="video" href="/bg.mp4" />>
-        <div className="wrap">
-          {show === "images" && (
-            <Images
-              onDone={() => {
-                this.setState({ show: "explosion" });
-              }}
-            />
-          )}
-        </div>
+        <link rel="preload" as="video" href="/bg.mp4" />
+        <link
+          rel="preload"
+          as="media"
+          href="https://media.giphy.com/media/oZYBdbW7TnhEQ/giphy.gif"
+        />
+        {show === "images" && (
+          <Images
+            onDone={() => {
+              this.setState({ show: "explosion" });
+            }}
+          />
+        )}
         {show === "explosion" && (
           <Explosion
             onDone={() => {

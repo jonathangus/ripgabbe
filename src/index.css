@@ -10,6 +10,18 @@ img {
   max-width: 100%;
 }
 
+.images {
+  height: 100vh;
+  background-image: url(https://static.cabonline.com/sverigetaxi/b573111d2f0e4e09b934bc257b1e9362.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.images-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .expl {
   position: absolute;
   left: 0;
@@ -33,11 +45,15 @@ img {
   left: 0;
   top: 0;
   height: 100%;
+  z-index: 10;
   width: 100%;
+}
+.mainVid video {
   object-fit: contain;
   object-position: top;
-  z-index: 10;
   filter: grayscale(1);
+  margin: 0 auto;
+  display: block;
 }
 
 h1,
@@ -76,6 +92,14 @@ h2 {
   width: 100%;
   background: #000;
   padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content img {
+  max-width: 100px;
+  margin-right: 20px;
 }
 
 @keyframes logo {
@@ -152,4 +176,28 @@ h2 {
 .jontface {
   position: absolute;
   max-width: 100px;
+}
+
+.daniel {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  animation: daniel 2s ease infinite;
+}
+
+@keyframes daniel {
+  0% {
+    transform: scale(1) translateX(30px);
+  }
+  50% {
+    transform: scale(1.05) translateX(10px);
+  }
+  100% {
+    transform: scale(1) translateX(30px);
+  }
+}
+
+.daniel img {
+  max-width: 200px;
 }

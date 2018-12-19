@@ -45,21 +45,23 @@ class Images extends Component {
     const count = this.state.visible;
 
     return (
-      <div>
-        {list.map((l, i) => {
-          let posed = "hide";
-          if (i === count) {
-            posed = "show";
-          } else if (i < count) {
-            posed = "done";
-          }
+      <div className="images">
+        <div className="images-inner">
+          {list.map((l, i) => {
+            let posed = "hide";
+            if (i === count) {
+              posed = "show";
+            } else if (i < count) {
+              posed = "done";
+            }
 
-          return (
-            <Image pose={posed} key={l}>
-              <img alt="" src={l} />
-            </Image>
-          );
-        })}
+            return (
+              <Image pose={posed} key={l}>
+                <img alt="" src={l} />
+              </Image>
+            );
+          })}
+        </div>
       </div>
     );
   }
