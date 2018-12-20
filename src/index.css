@@ -298,3 +298,7 @@ h3 {
     font-size: 20px;
   }
 }
+
+.linkedImage:nth-child(1) {
+  opacity: 1 !important;
+}

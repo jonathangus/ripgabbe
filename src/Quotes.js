@@ -23,15 +23,15 @@ const qoutes = [
   },
   {
     name: "Jonte",
-    text: "Gabbe??? Gabbe Gabbe Gabbe"
-  },
-  {
-    text: "Superlike på den",
-    name: "random på tinder"
+    text: "Gabbe???! Gabbe! Gabbe! Gabbe"
   },
   {
     text: "Mums mums mums",
     name: "kvinna 43, 02:12 på Lemonbar"
+  },
+  {
+    text: "Det blir fullpris",
+    name: "Bartender på John Scott"
   }
 ];
 

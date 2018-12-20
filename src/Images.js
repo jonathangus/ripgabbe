@@ -56,7 +56,7 @@ class Images extends Component {
             }
 
             return (
-              <Image pose={posed} key={l}>
+              <Image pose={posed} className="linkedImage" key={l}>
                 <img alt="" src={l} />
               </Image>
             );
