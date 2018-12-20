@@ -54,6 +54,8 @@ img {
   filter: grayscale(1);
   margin: 0 auto;
   display: block;
+  position: relative;
+  z-index: 5;
 }
 
 h1,
@@ -70,17 +72,15 @@ h1 {
 h2 {
   font-size: 40px;
 }
-@media (max-width: 700px) {
-  .mainVid {
-    object-fit: cover;
-  }
 
-  h1 {
-    font-size: 30px;
-  }
-  h2 {
-    font-size: 20px;
-  }
+.jontface {
+  position: absolute;
+  z-index: 1;
+}
+
+.jontface {
+  position: absolute;
+  max-width: 100px;
 }
 
 .content {
@@ -168,16 +168,6 @@ h2 {
   animation: jonthanna 4s linear infinite;
 }
 
-.jontface {
-  position: absolute;
-  z-index: 1;
-}
-
-.jontface {
-  position: absolute;
-  max-width: 100px;
-}
-
 .daniel {
   position: absolute;
   z-index: 2;
@@ -231,4 +221,80 @@ h3 {
   font-weight: bold;
   font-size: 60px;
   text-shadow: 2px 2px 2px #000;
+}
+
+.sound {
+  color: white;
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+@media (max-width: 700px) {
+  .mainVid {
+    z-index: 1000;
+  }
+
+  .jontface {
+    transform: scale(0.2);
+    z-index: 1110;
+    opacity: 0.65;
+    max-width: 30px !important;
+  }
+  .content {
+    z-index: 2000;
+  }
+  .content img {
+    display: none;
+  }
+  .mainVid video {
+    object-fit: cover;
+  }
+
+  .sound span {
+    display: none;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+
+  .logo {
+    z-index: 3000 !important;
+  }
+
+  .hanjont {
+    z-index: 1500 !important;
+  }
+
+  .hanjont img {
+    max-width: 100px;
+  }
+
+  .vinit {
+    left: 0 !important;
+    z-index: 2100 !important;
+  }
+
+  .vinit video {
+    max-width: 100px !important;
+  }
+
+  .quoute {
+    z-index: 6000;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
 }

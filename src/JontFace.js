@@ -11,6 +11,7 @@ export default class extends React.Component {
 
   componentDidMount() {
     let count = 0;
+    const time = window.innerWidth < 600 ? 2000 : 150;
 
     setInterval(() => {
       let image;
@@ -35,7 +36,7 @@ export default class extends React.Component {
           }
         ]
       });
-    }, 150);
+    }, time);
   }
   render() {
     return (

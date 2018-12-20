@@ -18,8 +18,8 @@ class App extends Component {
       "/boat.mp4",
       "/vinit.mp4",
       "/music.mp3",
-      "/daniel.pn3",
-      "/hannajonte.pn3"
+      "/daniel.png",
+      "/hannajonte.png"
     ]);
     preload.oncomplete = () => {};
     preload.onprogress = () => {};

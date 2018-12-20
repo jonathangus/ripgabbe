@@ -7,8 +7,10 @@ import Boat from "./Boat";
 import Quotes from "./Quotes";
 
 export default class extends React.Component {
-  componentDidMount() {
+  play() {
+    if (this.played) return;
     new Audio("/music.mp3").play();
+    this.played = true;
   }
   render() {
     return (
@@ -30,6 +32,11 @@ export default class extends React.Component {
           <div>
             <h1>RIP GABBE</h1>
             <h2>2008 - 2018</h2>
+          </div>
+
+          <div className="sound" onClick={() => this.play()}>
+            <b>🔊</b>
+            <span>🔊🔊 Sound ON 🔊🔊🔊</span>
           </div>
         </div>
         <div className="mainVid">

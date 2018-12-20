@@ -26,12 +26,12 @@ const qoutes = [
     text: "Gabbe??? Gabbe Gabbe Gabbe"
   },
   {
-    name: "Superlike på den",
-    text: "random på tinder"
+    text: "Superlike på den",
+    name: "random på tinder"
   },
   {
-    name: "Mums mums mums",
-    text: "kvinna 43 02:12 på Lemonbar"
+    text: "Mums mums mums",
+    name: "kvinna 43, 02:12 på Lemonbar"
   }
 ];
 
